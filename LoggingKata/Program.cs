@@ -93,15 +93,19 @@ namespace LoggingKata
                         tacoA = locations[a];
                         tacoB = locations[b];
                     }
+                    var distanceConvert = distance * 0.0006;
+                    distanceConvert = Math.Round(distanceConvert, 2);
 
                     
                 }
-               
 
+                
             }
-
-            Console.WriteLine($"{tacoA.Name} and {tacoB.Name} equal the furthest apart");
             
+            Console.WriteLine($"{tacoA.Name} and {tacoB.Name} equal the furthest apart");
+            Console.WriteLine();
+          
+          
             
             
             // Include the Geolocation toolbox, so you can compare locations: `using GeoCoordinatePortable;`
